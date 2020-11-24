@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prvi", "Prvi\Prvi.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "drugi", "drugi\drugi.csproj", "{D70EF1EF-BDE8-4FBF-B4BE-380B6784CFE7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pmrvic", "pmrvic", "{34A522ED-66E3-4540-A851-96AFDCD2B6FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zbroj", "Zbroj\Zbroj.csproj", "{88550BF1-33CC-4AF0-AB45-E3D7F067A08E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,10 @@ Global
 		{D70EF1EF-BDE8-4FBF-B4BE-380B6784CFE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D70EF1EF-BDE8-4FBF-B4BE-380B6784CFE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D70EF1EF-BDE8-4FBF-B4BE-380B6784CFE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88550BF1-33CC-4AF0-AB45-E3D7F067A08E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88550BF1-33CC-4AF0-AB45-E3D7F067A08E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88550BF1-33CC-4AF0-AB45-E3D7F067A08E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88550BF1-33CC-4AF0-AB45-E3D7F067A08E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{63658B73-8B23-40AA-BA5C-71CD6A0BDBBA} = {CA705909-8E34-4BCE-BFFE-0F5F30435F45}
 		{D70EF1EF-BDE8-4FBF-B4BE-380B6784CFE7} = {CA705909-8E34-4BCE-BFFE-0F5F30435F45}
+		{88550BF1-33CC-4AF0-AB45-E3D7F067A08E} = {34A522ED-66E3-4540-A851-96AFDCD2B6FC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2BB20FC2-F569-43F1-A2ED-1EDE6A62F22D}
