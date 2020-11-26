@@ -13,6 +13,8 @@ namespace Prvi
         {
             // return base.ToString();
             return "Ja sam Automobil Audi A1, moja boja je "+this.boja;
+
+
         }
     }
 }
