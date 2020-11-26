@@ -10,9 +10,12 @@ namespace Prvi
             Console.WriteLine("Evo dopunio sam!");
             Automobil a1 = new Automobil();
             Console.WriteLine(a1);
-            a1.boja = "Maroon";
+            a1.boja = "Mar\"oon";
             Console.WriteLine(a1);
-
+            
+            a1.PostaviSnagu(100);
+            Console.WriteLine(a1);
+            
 
         }
     }
