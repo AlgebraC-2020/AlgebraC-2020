@@ -23,11 +23,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_operatori", "01_operator
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_domaci_zadatak", "01_domaci_zadatak\01_domaci_zadatak.csproj", "{288C5C8B-90C0-44A0-B92F-DA5CA0FA8A7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_umnozak_kvocijent", "01_umnozak_kvocijent\01_umnozak_kvocijent.csproj", "{DD3619E7-0F63-47E9-9925-890360073ECD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_umnozak_kvocijent", "01_umnozak_kvocijent\01_umnozak_kvocijent.csproj", "{DD3619E7-0F63-47E9-9925-890360073ECD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_If_prosireni", "01_If_prosireni\01_If_prosireni.csproj", "{92CFFFEA-AE6E-446B-A21D-4AAAC2216408}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_If_prosireni", "01_If_prosireni\01_If_prosireni.csproj", "{92CFFFEA-AE6E-446B-A21D-4AAAC2216408}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_If_prosireni_2", "01_If_prosireni_2\01_If_prosireni_2.csproj", "{6A5BB070-9FFA-40E5-8875-2A4370D868D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_If_prosireni_2", "01_If_prosireni_2\01_If_prosireni_2.csproj", "{6A5BB070-9FFA-40E5-8875-2A4370D868D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_unos_brojeva _exception", "01_unos_brojeva _exception\01_unos_brojeva _exception.csproj", "{A8195DBD-9945-4719-AB7C-C546C356718D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +81,10 @@ Global
 		{6A5BB070-9FFA-40E5-8875-2A4370D868D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A5BB070-9FFA-40E5-8875-2A4370D868D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A5BB070-9FFA-40E5-8875-2A4370D868D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8195DBD-9945-4719-AB7C-C546C356718D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8195DBD-9945-4719-AB7C-C546C356718D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8195DBD-9945-4719-AB7C-C546C356718D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8195DBD-9945-4719-AB7C-C546C356718D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +102,7 @@ Global
 		{DD3619E7-0F63-47E9-9925-890360073ECD} = {CA705909-8E34-4BCE-BFFE-0F5F30435F45}
 		{92CFFFEA-AE6E-446B-A21D-4AAAC2216408} = {CA705909-8E34-4BCE-BFFE-0F5F30435F45}
 		{6A5BB070-9FFA-40E5-8875-2A4370D868D8} = {CA705909-8E34-4BCE-BFFE-0F5F30435F45}
+		{A8195DBD-9945-4719-AB7C-C546C356718D} = {CA705909-8E34-4BCE-BFFE-0F5F30435F45}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2BB20FC2-F569-43F1-A2ED-1EDE6A62F22D}
