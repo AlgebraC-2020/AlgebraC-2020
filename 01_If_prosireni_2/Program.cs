@@ -31,9 +31,15 @@ namespace _01_If_prosireni_2
             else
             {
                 if (broj < 0)
+                {
                     Console.WriteLine("Negativan");
+                }
+
                 else
+                {
                     Console.WriteLine("Nula (Zero)");
+                }
+
             }
 
             Console.ReadKey();

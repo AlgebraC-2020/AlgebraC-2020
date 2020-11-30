@@ -31,6 +31,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_If_prosireni_2", "01_If_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_unos_brojeva _exception", "01_unos_brojeva _exception\01_unos_brojeva _exception.csproj", "{A8195DBD-9945-4719-AB7C-C546C356718D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "alg-05-petlje-i-grananja", "alg-05-petlje-i-grananja", "{9359C465-20BF-4652-BC96-08D5B26CCA7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_switch", "05_switch\05_switch.csproj", "{72AF3DEA-4502-4550-98BC-5A9D0EF8F113}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +89,10 @@ Global
 		{A8195DBD-9945-4719-AB7C-C546C356718D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8195DBD-9945-4719-AB7C-C546C356718D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8195DBD-9945-4719-AB7C-C546C356718D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72AF3DEA-4502-4550-98BC-5A9D0EF8F113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72AF3DEA-4502-4550-98BC-5A9D0EF8F113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72AF3DEA-4502-4550-98BC-5A9D0EF8F113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72AF3DEA-4502-4550-98BC-5A9D0EF8F113}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,6 +111,8 @@ Global
 		{92CFFFEA-AE6E-446B-A21D-4AAAC2216408} = {CA705909-8E34-4BCE-BFFE-0F5F30435F45}
 		{6A5BB070-9FFA-40E5-8875-2A4370D868D8} = {CA705909-8E34-4BCE-BFFE-0F5F30435F45}
 		{A8195DBD-9945-4719-AB7C-C546C356718D} = {CA705909-8E34-4BCE-BFFE-0F5F30435F45}
+		{9359C465-20BF-4652-BC96-08D5B26CCA7E} = {34A522ED-66E3-4540-A851-96AFDCD2B6FC}
+		{72AF3DEA-4502-4550-98BC-5A9D0EF8F113} = {9359C465-20BF-4652-BC96-08D5B26CCA7E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2BB20FC2-F569-43F1-A2ED-1EDE6A62F22D}
