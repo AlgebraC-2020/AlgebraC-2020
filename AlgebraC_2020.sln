@@ -67,6 +67,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_03_potencije_dva do_1000
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_03_par_nepar", "05_03_par_nepar\05_03_par_nepar.csproj", "{77BD607A-C474-416B-8BCB-0053CB62EAE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_03_unos_ocjena", "05_03_unos_ocjena\05_03_unos_ocjena.csproj", "{411C97E7-D900-498D-97D2-A2860F8D6D1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,10 @@ Global
 		{77BD607A-C474-416B-8BCB-0053CB62EAE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77BD607A-C474-416B-8BCB-0053CB62EAE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77BD607A-C474-416B-8BCB-0053CB62EAE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{411C97E7-D900-498D-97D2-A2860F8D6D1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{411C97E7-D900-498D-97D2-A2860F8D6D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{411C97E7-D900-498D-97D2-A2860F8D6D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{411C97E7-D900-498D-97D2-A2860F8D6D1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -225,6 +231,7 @@ Global
 		{9B4640A0-70A7-4BC7-B689-5E3D0EBFC3E2} = {9359C465-20BF-4652-BC96-08D5B26CCA7E}
 		{0814D245-A491-43BE-A31B-A78E6A36F23E} = {9359C465-20BF-4652-BC96-08D5B26CCA7E}
 		{77BD607A-C474-416B-8BCB-0053CB62EAE9} = {9359C465-20BF-4652-BC96-08D5B26CCA7E}
+		{411C97E7-D900-498D-97D2-A2860F8D6D1D} = {9359C465-20BF-4652-BC96-08D5B26CCA7E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2BB20FC2-F569-43F1-A2ED-1EDE6A62F22D}
