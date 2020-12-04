@@ -1,6 +1,8 @@
 # AlgebraC-2020
 
 neka promjena
+<<<<<<< HEAD
+=======
 ##Zadace 30.11.2020 (drugi +): 
 - Marina Pour
 - Filip Brkic
@@ -18,3 +20,4 @@ neka promjena
 - Jurica
 - Josip M
 
+>>>>>>> c44bac0e4d5cfe81b7c8723d9bb5f94bb401bb87
