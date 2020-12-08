@@ -1,11 +1,11 @@
-<<<<<<< HEAD
+
 ﻿using System;
 
 using System.Collections.Generic;
 
-=======
+
 ﻿using System;
->>>>>>> c44bac0e4d5cfe81b7c8723d9bb5f94bb401bb87
+
 
 namespace _01_domaci_zadatak
 {
@@ -23,7 +23,7 @@ namespace _01_domaci_zadatak
             //4.1.3 - Ledište/Vrelište
             //Napišite program koji će ispisivati temperaturu ledišta i vrelišta
             //vode, svaku u novi red
-<<<<<<< HEAD
+
             string naslov;
             naslov = "\nLed i vatra vode";
             int led = 0;
@@ -69,7 +69,7 @@ namespace _01_domaci_zadatak
     
    
 
-=======
+
 
             //5.1.1 - Zbroj i razlika
             //Program koji traži unos 2 cijela broja i prikazuje
@@ -79,6 +79,5 @@ namespace _01_domaci_zadatak
             //Program koji traži unos 2 cijela broja i prikazuje 
             //umnožak i kvocijent
         }
-    }
->>>>>>> c44bac0e4d5cfe81b7c8723d9bb5f94bb401bb87
-}
+    
+
