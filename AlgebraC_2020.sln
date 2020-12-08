@@ -83,6 +83,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_02_List", "06_02_List\06
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_02_genericke_liste", "06_02_genericke_liste\06_02_genericke_liste.csproj", "{857949A5-40B4-48F2-AB86-E81911F828D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_02_01_znamenke_lista", "06_02_01_znamenke_lista\06_02_01_znamenke_lista.csproj", "{24D3CAC9-130D-4F06-82BD-DFD0E577B00E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -233,6 +235,10 @@ Global
 		{857949A5-40B4-48F2-AB86-E81911F828D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{857949A5-40B4-48F2-AB86-E81911F828D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{857949A5-40B4-48F2-AB86-E81911F828D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24D3CAC9-130D-4F06-82BD-DFD0E577B00E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24D3CAC9-130D-4F06-82BD-DFD0E577B00E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24D3CAC9-130D-4F06-82BD-DFD0E577B00E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24D3CAC9-130D-4F06-82BD-DFD0E577B00E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -277,6 +283,7 @@ Global
 		{9EE64ADE-09A0-42A1-ACC9-1C970AE35D82} = {3FB39A07-39C5-4210-88EA-523DE7E20335}
 		{AAC9EA1D-EF41-4334-84C2-CC2661B0F1A9} = {3FB39A07-39C5-4210-88EA-523DE7E20335}
 		{857949A5-40B4-48F2-AB86-E81911F828D5} = {3FB39A07-39C5-4210-88EA-523DE7E20335}
+		{24D3CAC9-130D-4F06-82BD-DFD0E577B00E} = {3FB39A07-39C5-4210-88EA-523DE7E20335}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2BB20FC2-F569-43F1-A2ED-1EDE6A62F22D}
