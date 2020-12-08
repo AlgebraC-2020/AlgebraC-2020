@@ -93,6 +93,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_kvadrat", "07_kvadrat\07
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_primjermetoda", "07_primjermetoda\07_primjermetoda.csproj", "{0CA13F4A-6B52-4197-BD2D-EBB3AB9104E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_02_Krug", "07_02_Krug\07_02_Krug.csproj", "{1A6AAFF1-49A1-4DAC-AF34-3A434B8CB986}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -259,6 +261,10 @@ Global
 		{0CA13F4A-6B52-4197-BD2D-EBB3AB9104E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CA13F4A-6B52-4197-BD2D-EBB3AB9104E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CA13F4A-6B52-4197-BD2D-EBB3AB9104E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A6AAFF1-49A1-4DAC-AF34-3A434B8CB986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A6AAFF1-49A1-4DAC-AF34-3A434B8CB986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A6AAFF1-49A1-4DAC-AF34-3A434B8CB986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A6AAFF1-49A1-4DAC-AF34-3A434B8CB986}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -308,6 +314,7 @@ Global
 		{B39B88A6-A5CD-4A84-8756-4F53E17F1432} = {6A5DFD1D-5E95-4C9C-92EC-4143877DF015}
 		{B5799F9E-220D-472E-824F-38119CD9283B} = {6A5DFD1D-5E95-4C9C-92EC-4143877DF015}
 		{0CA13F4A-6B52-4197-BD2D-EBB3AB9104E4} = {6A5DFD1D-5E95-4C9C-92EC-4143877DF015}
+		{1A6AAFF1-49A1-4DAC-AF34-3A434B8CB986} = {6A5DFD1D-5E95-4C9C-92EC-4143877DF015}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2BB20FC2-F569-43F1-A2ED-1EDE6A62F22D}
