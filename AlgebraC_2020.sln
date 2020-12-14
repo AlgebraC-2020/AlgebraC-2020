@@ -10,6 +10,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "drugi", "drugi\drugi.csproj", "{D70EF1EF-BDE8-4FBF-B4BE-380B6784CFE7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pmrvic", "pmrvic", "{34A522ED-66E3-4540-A851-96AFDCD2B6FC}"
+	ProjectSection(SolutionItems) = preProject
+		ZADACA za 16.12.2020.txt = ZADACA za 16.12.2020.txt
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zbroj", "Zbroj\Zbroj.csproj", "{88550BF1-33CC-4AF0-AB45-E3D7F067A08E}"
 EndProject
