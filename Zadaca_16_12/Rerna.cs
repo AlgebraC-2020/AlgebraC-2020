@@ -8,16 +8,16 @@ namespace Zadaca_16_12
     {
         public static int BrojIspecenihKolaca;
 
-        public static void Ispeci(ref Kolac K1)
+        public static void Ispeci(ref Kolac kolac)
         {
-            if (K1.ImeKolaca != null && K1.Sastojci.Count > 0)
+            if (kolac.ImeKolaca != null && kolac.Sastojci.Count > 0)
             {
                 BrojIspecenihKolaca++;
-                K1.Ispecen = true;
+                kolac.Ispecen = true;
             }
             else
             {
-                K1.Ispecen = false;
+                kolac.Ispecen = false;
             }
            
         }
