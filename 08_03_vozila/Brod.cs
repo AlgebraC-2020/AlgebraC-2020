@@ -1,10 +1,10 @@
 ﻿namespace _08_03_vozila
 {
-    internal class Brod:Vozilo
+    public class Brod:Vozilo
     {
-        private string Naziv;
-        private string Boja;
-        private int KS;
+        //private string Naziv;
+        //private string Boja;
+        //private int KS;
         private int Istisnina;
 
         public Brod(string Naziv, string Boja, int KS, int Istisnina):base(Naziv, Boja, KS)

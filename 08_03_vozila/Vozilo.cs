@@ -2,7 +2,7 @@
 
 namespace _08_03_vozila
 {
-    internal class Vozilo
+    public class Vozilo
     {
         public Vozilo(string Naziv, string Boja, int KS)
         {
