@@ -1,5 +1,7 @@
 ﻿using System;
 
+// PUBLISHER
+
 namespace _08_dogadjaji_veci
 {
     internal class Osoba

@@ -126,17 +126,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_03_over_hide", "08_03_ov
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_03_vozila", "08_03_vozila\08_03_vozila.csproj", "{5DE97D09-6D51-4E04-B587-949DCF9A3ED0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_nova_vozila_s_dll", "08_nova_vozila_s_dll\08_nova_vozila_s_dll.csproj", "{33592B0D-A8DA-4F34-8231-D5E95121F577}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_nova_vozila_s_dll", "08_nova_vozila_s_dll\08_nova_vozila_s_dll.csproj", "{33592B0D-A8DA-4F34-8231-D5E95121F577}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_vozila_i_osobe_dll_referenca_na_projekt", "08_vozila_dll_referenca_na_projekt\08_vozila_i_osobe_dll_referenca_na_projekt.csproj", "{0F5B4D65-3ADA-4FFD-A9AE-40F899AD5840}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_vozila_i_osobe_dll_referenca_na_projekt", "08_vozila_dll_referenca_na_projekt\08_vozila_i_osobe_dll_referenca_na_projekt.csproj", "{0F5B4D65-3ADA-4FFD-A9AE-40F899AD5840}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazneOsobe", "RazneOsobe\RazneOsobe.csproj", "{A9ADB2D7-1C1A-409A-850A-CB6223063134}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazneOsobe", "RazneOsobe\RazneOsobe.csproj", "{A9ADB2D7-1C1A-409A-850A-CB6223063134}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_dogadjaji", "08_dogadjaji\08_dogadjaji.csproj", "{31A191A9-5057-4E1A-A14B-BFC4C4428072}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_dogadjaji", "08_dogadjaji\08_dogadjaji.csproj", "{31A191A9-5057-4E1A-A14B-BFC4C4428072}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_multicast_delegate", "08_multicast_delegate\08_multicast_delegate.csproj", "{78A3663D-0680-48D0-B5EE-9D9E6D83C40D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_multicast_delegate", "08_multicast_delegate\08_multicast_delegate.csproj", "{78A3663D-0680-48D0-B5EE-9D9E6D83C40D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_dogadjaji_veci", "08_dogadjaji_veci\08_dogadjaji_veci.csproj", "{EEA6A88D-F1FF-4B68-9A9E-53E0E0D38A67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_dogadjaji_veci", "08_dogadjaji_veci\08_dogadjaji_veci.csproj", "{EEA6A88D-F1FF-4B68-9A9E-53E0E0D38A67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Konzola", "Vozila.Konzola\Vozila.Konzola.csproj", "{B69F7EA0-2CD2-4584-9EC9-2CDE68365C5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vozila", "Vozila", "{28AEA3E1-6C29-4D29-B668-368F63B54A3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Model", "Vozila.Model\Vozila.Model.csproj", "{72143A8A-2CEA-422F-9B4B-C74E6AE9719D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Win32", "Vozila.Win32\Vozila.Win32.csproj", "{7D5E6045-BB49-4275-9006-6B719367BD4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -376,6 +384,18 @@ Global
 		{EEA6A88D-F1FF-4B68-9A9E-53E0E0D38A67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEA6A88D-F1FF-4B68-9A9E-53E0E0D38A67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEA6A88D-F1FF-4B68-9A9E-53E0E0D38A67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B69F7EA0-2CD2-4584-9EC9-2CDE68365C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B69F7EA0-2CD2-4584-9EC9-2CDE68365C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B69F7EA0-2CD2-4584-9EC9-2CDE68365C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B69F7EA0-2CD2-4584-9EC9-2CDE68365C5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72143A8A-2CEA-422F-9B4B-C74E6AE9719D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72143A8A-2CEA-422F-9B4B-C74E6AE9719D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72143A8A-2CEA-422F-9B4B-C74E6AE9719D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72143A8A-2CEA-422F-9B4B-C74E6AE9719D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D5E6045-BB49-4275-9006-6B719367BD4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D5E6045-BB49-4275-9006-6B719367BD4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D5E6045-BB49-4275-9006-6B719367BD4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D5E6045-BB49-4275-9006-6B719367BD4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -446,6 +466,10 @@ Global
 		{31A191A9-5057-4E1A-A14B-BFC4C4428072} = {43077E4A-F78E-44F5-AA9E-BC595E482E59}
 		{78A3663D-0680-48D0-B5EE-9D9E6D83C40D} = {43077E4A-F78E-44F5-AA9E-BC595E482E59}
 		{EEA6A88D-F1FF-4B68-9A9E-53E0E0D38A67} = {43077E4A-F78E-44F5-AA9E-BC595E482E59}
+		{B69F7EA0-2CD2-4584-9EC9-2CDE68365C5D} = {28AEA3E1-6C29-4D29-B668-368F63B54A3E}
+		{28AEA3E1-6C29-4D29-B668-368F63B54A3E} = {43077E4A-F78E-44F5-AA9E-BC595E482E59}
+		{72143A8A-2CEA-422F-9B4B-C74E6AE9719D} = {28AEA3E1-6C29-4D29-B668-368F63B54A3E}
+		{7D5E6045-BB49-4275-9006-6B719367BD4C} = {28AEA3E1-6C29-4D29-B668-368F63B54A3E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2BB20FC2-F569-43F1-A2ED-1EDE6A62F22D}

@@ -1,5 +1,10 @@
 ﻿using System;
 
+
+// SUBSCRIBER
+
+
+
 namespace _08_dogadjaji_veci
 {
     class Program
