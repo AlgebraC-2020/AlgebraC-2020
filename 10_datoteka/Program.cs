@@ -15,7 +15,7 @@ namespace _10_datoteka
            // FileStream fs1 = new FileStream("Proba.txt", FileMode.Create); //FileStream("Proba.txt", 2);
 
             // handfle koji dodaje na kraj filea
-            FileStream fs1 = new FileStream("Proba.txt", FileMode.Append); //FileStream("Proba.txt", 6);
+            FileStream fs1 = new FileStream("Proba1.txt", FileMode.Append); //FileStream("Proba.txt", 6);
 
             StreamWriter sw1 = new StreamWriter(fs1);
 
@@ -27,7 +27,7 @@ namespace _10_datoteka
 
 
             // handfle koji dodaje na kraj filea
-            FileStream fs2 = new FileStream("Proba.txt", FileMode.Open); //FileStream("Proba.txt", 3);
+            FileStream fs2 = new FileStream("Proba1.txt", FileMode.Open); //FileStream("Proba.txt", 3);
 
             StreamReader sr1 = new StreamReader(fs2);
 
