@@ -1,5 +1,12 @@
 ﻿namespace _08_03_vozila
 {
+    public enum Boja
+    {
+        Zuta,
+        Plava,
+        Zelena,
+        Crvena
+    }
     // public class Automobil:Vozilo
     public class Automobil : Vozilo
     {
@@ -8,6 +15,11 @@
         //private int KS;
         private int ccm;
 
+        public Automobil(string Naziv, Boja bojaAutomobila, int KS, int Ccm) : base(Naziv, "Crvena", KS)
+        {
+            //this.Boja = bojaAutomobila.ToString();
+            this.Ccm = Ccm;
+        }
         public Automobil(string Naziv, string Boja, int KS, int Ccm):base(Naziv,Boja,KS)
         {
             this.Ccm = Ccm;
