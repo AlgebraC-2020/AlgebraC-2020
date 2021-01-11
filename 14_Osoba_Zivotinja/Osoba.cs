@@ -2,6 +2,7 @@
 
 namespace _14_Osoba_Zivotinja
 {
+    //internal class Osoba : IMojInterface, ICloneable, IDisposable, IComparable<Osoba> //moze i ovako
     internal class Osoba : IMojInterface, ICloneable, IDisposable, IComparable
 
     {
