@@ -5,6 +5,7 @@
         Zelena,
         Crvena,
         Zuta,
-        Plava
+        Plava,
+        Roza
     }
 }

@@ -2,14 +2,22 @@
 
 namespace _14_inter
 {
-    internal class Point : IPoint
+    internal class Point : IPoint, IDisposable  // ukoliko nasljedjujemo klasu nju treba navsti ISPRED liste IF-a
     {
         private BojaTocke mojaboja = BojaTocke.Plava;
 
+        ~Point()  // Ovo je destruktor 
+        {
+            Console.WriteLine("Garbage collector me pokupio :(   " + this);
+        }
         public Point(int x, int y)
         {
             this.X = x;
             this.Y = y;
+        }
+        public Point(int x, int y, BojaTocke novaBoja):this(x,y)  // POLIMORFIZAM
+        {
+            this.mojaboja = novaBoja;
         }
 
         private int x;
@@ -49,6 +57,11 @@ namespace _14_inter
         public void PomakniMeZaY(int v)
         {
             this.Y += v;
+        }
+
+        public void Dispose()
+        {
+            GC.SuppressFinalize(this);
         }
     }
 }
