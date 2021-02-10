@@ -16,13 +16,13 @@ namespace MVC2021.Controllers
 
         public MoviesController(MvcMovieContext context)
         {
-            _context = context;
+            _context = context; //connection na bazu
         }
 
         // GET: Movies
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Movie.ToListAsync());
+            return View(await _context.Movie.OrderByDescending(i=>i.Id).ToListAsync());  // SELECT ALL
         }
 
         // GET: Movies/Details/5
@@ -44,6 +44,7 @@ namespace MVC2021.Controllers
         }
 
         // GET: Movies/Create
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
@@ -53,7 +54,7 @@ namespace MVC2021.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        
         public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price")] Movie movie)
         {
             if (ModelState.IsValid)
