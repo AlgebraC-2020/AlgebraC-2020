@@ -12,6 +12,6 @@ namespace Fakultet.Models
         
         
         // Many 2 Many
-        public virtual Rezervacija RezervacijaNavigation { get; set; }
+       // public virtual Rezervacija OznDvoranaNavigation { get; set; }
     }
 }

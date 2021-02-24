@@ -17,6 +17,6 @@ namespace Fakultet.Models
         public virtual Orgjed SifOrgjedNavigation { get; set; }
 
         // Many 2 Many
-        public virtual Rezervacija RezervacijaNavigation { get; set; }
+        //public virtual Rezervacija SifPredNavigation { get; set; }
     }
 }

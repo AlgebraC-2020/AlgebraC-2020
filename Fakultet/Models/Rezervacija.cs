@@ -16,14 +16,14 @@ namespace Fakultet.Models
         public virtual Pred SifPredNavigation { get; set; }
 
         // Many 2 Many
-
+        /*
         public Rezervacija() {
-            Dvorana = new HashSet<Dvorana>();
-            Pred = new HashSet<Pred>();
+            Dvoranas = new HashSet<Dvorana>();
+            Preds = new HashSet<Pred>();
         }
-        public virtual ICollection<Dvorana> Dvorana { get; set; }
-        public virtual ICollection<Pred> Pred { get; set; }
+        public virtual ICollection<Dvorana> Dvoranas { get; set; }
+        public virtual ICollection<Pred> Preds { get; set; }
 
-
+        */
     }
 }
