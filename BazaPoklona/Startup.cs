@@ -26,7 +26,8 @@ namespace BazaPoklona
         {
             services.AddControllersWithViews();
 
-
+            services.AddDbContext<BazaPoklonaContext>(options =>
+          options.UseSqlServer(Configuration.GetConnectionString("BazaPoklonaContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

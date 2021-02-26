@@ -1,1 +1,10 @@
-﻿Scaffold-DbContext "Server=.\SQLExpress;Database=BazaPoklona;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+﻿1)
+Scaffold-DbContext "Server=.\SQLExpress;Database=BazaPoklona;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+2) 
+postaviti connection u appsettings.json
+
+3) 
+posaviti service u Startup.cs
+
+4)
