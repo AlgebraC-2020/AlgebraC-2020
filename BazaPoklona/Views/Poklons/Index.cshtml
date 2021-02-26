@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Shopping lista</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -26,12 +26,20 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
+    if (item.Kupljen == false)
+    {
+
+
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Naziv)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Kupljen)
+                @*  @Html.DisplayFor(modelItem => item.Kupljen) *@
+                <form asp-controller="Poklons" asp-action="Kupljen" method="post">
+                    <input type="checkbox" name="id" value="@item.IdPoklon" onchange="this.form.submit()" />
+                </form>
+
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.VrstaRobeNavigation.Naziv)
@@ -42,6 +50,7 @@
                 <a asp-action="Delete" asp-route-id="@item.IdPoklon">Delete</a>
             </td>
         </tr>
+    }
 }
     </tbody>
 </table>

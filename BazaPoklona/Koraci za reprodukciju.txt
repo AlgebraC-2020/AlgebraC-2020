@@ -8,3 +8,14 @@ postaviti connection u appsettings.json
 posaviti service u Startup.cs
 
 4)
+
+
+Josip Milanović: 
+1) U View-VrstaRobe-Index ispisati podatke iz stupca "Naziv" (iz tablice "Vrsta robe"),
+te podatke "Naziv, Kupljen" (iz tablice "Poklon")
+-ovdje želim vidjeti kako se iz jedne Tablice/Controlera/View ispisuju
+podaci u View koji pripada drugom kontroleru
+
+2) U View-Vrsta Robe ispisati podatke iz stupca "Naziv" (iz tablice "Vrsta robe") 
+i broj ukupno prodane pojedine robe (iz tablice "Poklon"-Kupljen) 
+(npr. Food-->2, Sport-->1)
