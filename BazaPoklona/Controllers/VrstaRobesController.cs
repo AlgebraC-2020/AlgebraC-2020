@@ -9,6 +9,12 @@ using BazaPoklona.Models;
 
 namespace BazaPoklona.Controllers
 {
+    class Pet
+    {
+        public string Name { get; set; }
+        public double Age { get; set; }
+    }
+
     public class VrstaRobesController : Controller
     {
         private readonly BazaPoklonaContext _context;
@@ -24,6 +30,26 @@ namespace BazaPoklona.Controllers
             return View(await _context.VrstaRobes.ToListAsync());
         }
 
+        // GET: VrstaRobes
+        public async Task<IActionResult> OstvareniPromet()
+        {            
+            var dbPoklons = await _context.Poklons.ToListAsync();
+
+            var results = from p in dbPoklons
+                          orderby p.VrstaRobe
+                          group p by p.VrstaRobe
+                          into newData
+                          select new Poklon
+                          {
+                              VrstaRobe = newData.Key,
+                              Naziv = newData.Max(d => d.Naziv),
+                              Cijena = newData.Sum(x => x.Cijena)
+                          };
+
+            return View(results);            
+
+        }
+
         // GET: VrstaRobes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -33,6 +59,8 @@ namespace BazaPoklona.Controllers
             }
 
             var vrstaRobe = await _context.VrstaRobes
+                .Include(p => p.Poklons)
+                .Include(t => t.Trgovinas)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (vrstaRobe == null)
             {

@@ -12,7 +12,7 @@ namespace BazaPoklona.Models
         public int VrstaRobe { get; set; }
         public bool Kupljen { get; set; }
 
-        public float Cijena { get; set; }
+        public double Cijena { get; set; }  //primjena iz float u double
         public virtual VrstaRobe VrstaRobeNavigation { get; set; }
     }
 }

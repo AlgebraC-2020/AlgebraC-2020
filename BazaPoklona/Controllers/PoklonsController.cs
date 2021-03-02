@@ -25,6 +25,19 @@ namespace BazaPoklona.Controllers
                 .Include(p => p.VrstaRobeNavigation);
             return View(await bazaPoklonaContext.ToListAsync());
         }
+        // GET: Poklons/Food
+        public async Task<IActionResult> Food()
+        {
+            var poklonListaHrana = _context.Poklons
+                .Where(x => x.VrstaRobeNavigation.Naziv == "Food")
+                 .Include(p => p.VrstaRobeNavigation);
+               //  .ToListAsync();
+            //  .FirstOrDefaultAsync(m => m.IdPoklon == id);
+            ViewData["poklonListaHrana"] = poklonListaHrana;
+
+            return View(await poklonListaHrana.ToListAsync());
+        }
+
 
         // GET: Poklons/Details/5
         public async Task<IActionResult> Details(int? id)
