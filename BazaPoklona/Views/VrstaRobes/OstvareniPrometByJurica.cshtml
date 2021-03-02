@@ -1,0 +1,46 @@
+﻿@model IEnumerable<BazaPoklona.Models.OstvareniPrometViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Shopping lista</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NazivRobe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VrstaRobe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UkupnoLovePoVrstiRobe)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+
+
+
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NazivRobe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VrstaRobe)
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UkupnoLovePoVrstiRobe)
+            </td>
+        </tr>
+    }
+
+    </tbody>
+</table>

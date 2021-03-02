@@ -79,6 +79,8 @@ namespace BazaPoklona.Models
                     .HasMaxLength(40);
             });
 
+           // modelBuilder.Entity<OstvareniPrometViewModel>().HasNoKey();
+
             OnModelCreatingPartial(modelBuilder);
         }
 
