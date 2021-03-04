@@ -1,3 +1,9 @@
+#Polozili parcijalni ispit MVC CORE
+- Maja
+- Katarina
+- Jurica
+
+
 #Polozili SQL (24.02.2021)
 - Dominik Hrdas
 - Bruno Riđanec
