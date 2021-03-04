@@ -20,6 +20,7 @@ namespace BazaPoklona.Models
         public virtual DbSet<Poklon> Poklons { get; set; }
         public virtual DbSet<Trgovina> Trgovinas { get; set; }
         public virtual DbSet<VrstaRobe> VrstaRobes { get; set; }
+        public DbSet<OstvareniPrometViewModel> OstvareniPrometViewModels { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -32,6 +33,8 @@ namespace BazaPoklona.Models
         // Data annotation ne radi, koristio je FLUENT API
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<OstvareniPrometViewModel>().HasNoKey();
+
             modelBuilder.HasAnnotation("Relational:Collation", "Croatian_CI_AS");
 
             modelBuilder.Entity<Poklon>(entity =>
