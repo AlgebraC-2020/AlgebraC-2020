@@ -99,10 +99,10 @@ InvalidOperationException: The required column 'Cijena' was not present in the r
 
 
           //  var promet = _context.Poklons.FromSqlRaw(
-               var promet = _context.Database.ExecuteSqlRawAsync(      
+               var promet = _context.OstvareniPrometViewModels.FromSqlRaw(  
                 @"SELECT max(dbo.Poklon.Naziv) as NazivRobe, max(dbo.VrstaRobe.Naziv) AS VrstaRobe, sum(Cijena) AS UkupnoLovePoVrstiRobe FROM dbo.Poklon
 JOIN dbo.VrstaRobe ON dbo.Poklon.VrstaRobe = dbo.VrstaRobe.Id
- GROUP BY VrstaRobe").Result;
+ GROUP BY VrstaRobe");
             return View(promet);
 
 
