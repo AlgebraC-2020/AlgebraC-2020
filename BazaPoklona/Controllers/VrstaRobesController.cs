@@ -95,11 +95,13 @@ InvalidOperationException: The required column 'Cijena' was not present in the r
             tx.Database.ExecuteSqlCommand($"Update [User] SET FirstName = {firstName} WHERE Id = {id}";
 
              */
-
-
-
-          //  var promet = _context.Poklons.FromSqlRaw(
-               var promet = _context.Database.ExecuteSqlRawAsync(      
+            /*
+            var test = _context.FromSqlRaw<OstvareniPrometViewModel>(@"SELECT max(dbo.Poklon.Naziv) as NazivRobe, max(dbo.VrstaRobe.Naziv) AS VrstaRobe, sum(Cijena) AS UkupnoLovePoVrstiRobe FROM dbo.Poklon
+JOIN dbo.VrstaRobe ON dbo.Poklon.VrstaRobe = dbo.VrstaRobe.Id
+ GROUP BY VrstaRobe").ToList();
+            */
+            //  var promet = _context.Poklons.FromSqlRaw(
+            var promet = _context.Database.ExecuteSqlRawAsync(      
                 @"SELECT max(dbo.Poklon.Naziv) as NazivRobe, max(dbo.VrstaRobe.Naziv) AS VrstaRobe, sum(Cijena) AS UkupnoLovePoVrstiRobe FROM dbo.Poklon
 JOIN dbo.VrstaRobe ON dbo.Poklon.VrstaRobe = dbo.VrstaRobe.Id
  GROUP BY VrstaRobe").Result;

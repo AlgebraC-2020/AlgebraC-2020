@@ -24,6 +24,20 @@ namespace BazaPoklona.Controllers
             var bazaPoklonaContext = _context.Trgovinas.Include(t => t.VrstaRobeNavigation);
             return View(await bazaPoklonaContext.ToListAsync());
         }
+        public async Task<IActionResult> TrgovinePoVrstiRobe()
+        {
+
+            var bazaPoklonaContext = _context.Trgovinas.Include(t => t.VrstaRobeNavigation);
+            return View(await bazaPoklonaContext.ToListAsync());
+            /*
+            var bazaPoklonaContext = _context.Trgovinas
+                .Include(t => t.VrstaRobeNavigation)
+                .Where(t => t.VrstaRobeNavigation.Id == 1)
+                .ToListAsync();
+
+            return View(await bazaPoklonaContext);
+            */
+        }
 
         // GET: Trgovinas/Details/5
         public async Task<IActionResult> Details(int? id)

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BazaPoklona.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BazaPoklona.Controllers
 {
@@ -23,8 +24,24 @@ namespace BazaPoklona.Controllers
         {
             var bazaPoklonaContext = _context.Poklons
                 .Include(p => p.VrstaRobeNavigation);
+           
+            var sviPokloni = _context.Poklons
+                .Include(p => p.VrstaRobeNavigation);
+
+            ViewData["sviPokloni"]= sviPokloni.ToList();
+
+
             return View(await bazaPoklonaContext.ToListAsync());
         }
+        // GET: Poklons
+
+        public async Task<IActionResult> SQL()
+        {
+            var test = _context.Poklons.FromSqlRaw<Poklon>("SELECT * FROM[BazaPoklona].[dbo].[Poklon]").ToList();
+
+            return View(test);
+        }
+
         // GET: Poklons/Food
         public async Task<IActionResult> Food()
         {
