@@ -3,6 +3,7 @@
 - Katarina
 - Jurica
 - Marko
+- Jasmin
 
 
 #Polozili SQL (24.02.2021)
