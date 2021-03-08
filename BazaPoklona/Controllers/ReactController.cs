@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+//TODO ZADACA1 pokusaj se spojiti na bazu i prikazati contex preko WCF
+//TODO ZADACA2 pokusaj se spojiti na bazu i prikazati contex preko reacta
 namespace BazaPoklona.Controllers
 {
     public class ReactController : Controller
