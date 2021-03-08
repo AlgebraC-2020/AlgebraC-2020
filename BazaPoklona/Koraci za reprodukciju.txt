@@ -1,4 +1,12 @@
-﻿1)
+﻿ZA react ukoliko se pojavi greska :
+No input was found in config file tsconfig.json
+
+kreirati u solution home dir prazan file filedummy.ts !
+https://stackoverflow.com/questions/47205322/no-input-was-found-in-config-file-tsconfig-json
+
+
+
+1)
 Scaffold-DbContext "Server=.\SQLExpress;Database=BazaPoklona;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
 
 2) 
