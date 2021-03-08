@@ -2,6 +2,9 @@
 - Maja
 - Katarina
 - Jurica
+- Marko
+- Jasmin
+- Kamelija
 
 
 #Polozili SQL (24.02.2021)
