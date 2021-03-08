@@ -34,7 +34,8 @@ namespace BazaPoklona.Controllers
 
             return View(await bazaPoklonaContext.ToListAsync());
         }
-        // GET: Poklons
+
+        // GET: http://localhost:5000/Poklons/IndexJson
         public IActionResult IndexJson()
         {
             var bazaPoklonaContext = _context.Poklons
