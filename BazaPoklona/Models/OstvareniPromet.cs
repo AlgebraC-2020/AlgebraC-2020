@@ -1,19 +1,17 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-using Microsoft.EntityFrameworkCore;
-
 namespace BazaPoklona.Models
 {
     [Keyless]
-    public class OstvareniPrometViewModel
+    public partial class OstvareniPromet
     {
-        public string NazivRobe { get; set; }
-
+        public string Naziv { get; set; }
         public string VrstaRobe { get; set; }
-
         public double UkupnoLovePoVrstiRobe { get; set; }
     }
+
 }

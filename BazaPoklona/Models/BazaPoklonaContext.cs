@@ -21,6 +21,7 @@ namespace BazaPoklona.Models
         public virtual DbSet<Trgovina> Trgovinas { get; set; }
         public virtual DbSet<VrstaRobe> VrstaRobes { get; set; }
         public DbSet<OstvareniPrometViewModel> OstvareniPrometViewModels { get; set; }
+        public DbSet<OstvareniPromet> OstvareniPromet { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -81,8 +82,18 @@ namespace BazaPoklona.Models
                     .IsRequired()
                     .HasMaxLength(40);
             });
+            modelBuilder.Entity<OstvareniPromet>(
+                eb =>
+                {
+                    eb.HasNoKey();
+                    eb.ToView("View_OstvareniPromet");
+                    eb.Property(v => v.Naziv).HasColumnName("Naziv");
+                    eb.Property(v => v.VrstaRobe).HasColumnName("VrstaRobe");
+                    eb.Property(v => v.UkupnoLovePoVrstiRobe).HasColumnName("UkupnoLovePoVrstiRobe");
+                });
 
-           // modelBuilder.Entity<OstvareniPrometViewModel>().HasNoKey();
+
+            // modelBuilder.Entity<OstvareniPrometViewModel>().HasNoKey();
 
             OnModelCreatingPartial(modelBuilder);
         }

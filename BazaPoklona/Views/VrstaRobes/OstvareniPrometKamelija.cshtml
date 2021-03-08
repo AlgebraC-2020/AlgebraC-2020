@@ -1,0 +1,39 @@
+﻿@model IEnumerable<BazaPoklona.Models.OstvareniPromet>
+
+@{
+    ViewData["Title"] = "Ostvareni promet";
+}
+
+<h1>OstvareniPromet</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Naziv robe
+            </th>
+            <th>
+                Vrsta robe
+            </th>
+            <th>
+                Cijena
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Naziv)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VrstaRobe)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UkupnoLovePoVrstiRobe)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

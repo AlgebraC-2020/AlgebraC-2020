@@ -29,7 +29,16 @@ namespace BazaPoklona.Controllers
         {
             return View(await _context.VrstaRobes.ToListAsync());
         }
+        // GET: VrstaRobes
+        public async Task<IActionResult> OstvareniPrometKamelija()
+        {
+            var promet = await _context.OstvareniPromet
+                           .FromSqlRaw("SELECT max(p.Naziv) as Naziv, max(v.Naziv) as VrstaRobe, sum(p.Cijena) AS UkupnoLovePoVrstiRobe FROM dbo.Poklon p INNER JOIN dbo.VrstaRobe v ON p.VrstaRobe = v.Id GROUP BY p.VrstaRobe")
+                           .ToListAsync();
+            return View(promet);
 
+
+        }
         // GET: VrstaRobes
         public async Task<IActionResult> OstvareniPromet()
         {            
@@ -86,19 +95,8 @@ namespace BazaPoklona.Controllers
         {
             //TODO
 
-            /*
-             An unhandled exception occurred while processing the request.
-InvalidOperationException: The required column 'Cijena' was not present in the results 
-            of a 'FromSql' operation.
-            
-            
-            tx.Database.ExecuteSqlCommand($"Update [User] SET FirstName = {firstName} WHERE Id = {id}";
+            /* ZA PROIZVOLJAN SQL IZVRSITI UPIT TE MAPIRATI REZULTATE NA ODGOVARAJUCI OBJEKT    */
 
-             */
-
-
-
-          //  var promet = _context.Poklons.FromSqlRaw(
                var promet = _context.OstvareniPrometViewModels.FromSqlRaw(  
                 @"SELECT max(dbo.Poklon.Naziv) as NazivRobe, max(dbo.VrstaRobe.Naziv) AS VrstaRobe, sum(Cijena) AS UkupnoLovePoVrstiRobe FROM dbo.Poklon
 JOIN dbo.VrstaRobe ON dbo.Poklon.VrstaRobe = dbo.VrstaRobe.Id
