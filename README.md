@@ -5,7 +5,7 @@
 - Marko
 - Jasmin
 - Kamelija
-
+- Ivan Mijatovic (WCF 10.03.2021)
 
 #Polozili SQL (24.02.2021)
 - Dominik Hrdas
