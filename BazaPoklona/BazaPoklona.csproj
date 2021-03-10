@@ -40,4 +40,8 @@
     <TypeScriptCompile Include="wwwroot\js\Tutorial.jsx" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Imijat WCF service primjer\" />
+  </ItemGroup>
+
 </Project>
