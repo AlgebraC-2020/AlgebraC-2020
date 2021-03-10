@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using BazaPoklona.Models;
 using System.ComponentModel.DataAnnotations.Schema;
 using Newtonsoft.Json;
+using System.Net.Http;
 
 namespace BazaPoklona.Controllers
 {
@@ -38,16 +39,23 @@ namespace BazaPoklona.Controllers
         // GET: http://localhost:5000/Poklons/IndexJson
         public IActionResult IndexJson()
         {
-            var bazaPoklonaContext = _context.Poklons
-                .Include(p => p.VrstaRobeNavigation);
-            
-            //radi
-           // return Json(new Poklon { IdPoklon = 123, Naziv = "Hero",VrstaRobe=1 });
-           
-            //radi baza
             return Json(_context.Poklons);
         }
 
+        // consume from /Poklons/IndexJson
+        public async Task<IActionResult> ConsumeJson()
+        {
+            List<Poklon> pokloniList = new List<Poklon>();
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync("http://localhost:5000/Poklons/IndexJson"))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    pokloniList = JsonConvert.DeserializeObject<List<Poklon>>(apiResponse);
+                }
+            }
+            return View(pokloniList);
+        }
         // GET: Poklons/Food
         public async Task<IActionResult> Food()
         {
