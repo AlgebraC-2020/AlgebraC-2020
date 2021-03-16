@@ -31,7 +31,8 @@ namespace MVCsAuth
                 options.UseSqlServer(
    //                 Configuration.GetConnectionString("DefaultConnection")));
                       Configuration.GetConnectionString("AuthConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+ //           services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)  //ne zelim potvrdu mail adrese!
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)   // bez potvrde :)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
@@ -56,6 +57,7 @@ namespace MVCsAuth
 
             app.UseRouting();
 
+            // ukoliko zelim iskljuciti auth samo komentarm donje dvije linije
             app.UseAuthentication();
             app.UseAuthorization();
 
