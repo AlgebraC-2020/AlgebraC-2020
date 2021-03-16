@@ -9,16 +9,20 @@ using BazaPoklona.Models;
 using System.ComponentModel.DataAnnotations.Schema;
 using Newtonsoft.Json;
 using System.Net.Http;
+using Microsoft.AspNetCore.Hosting;
+using System.IO;
 
 namespace BazaPoklona.Controllers
 {
     public class PoklonsController : Controller
     {
         private readonly BazaPoklonaContext _context;
+        private IWebHostEnvironment hostingEnv;
 
-        public PoklonsController(BazaPoklonaContext context)
+        public PoklonsController(BazaPoklonaContext context, IWebHostEnvironment env)
         {
             _context = context;
+            this.hostingEnv = env;
         }
 
         // GET: Poklons
@@ -56,6 +60,16 @@ namespace BazaPoklona.Controllers
             }
             return View(pokloniList);
         }
+        public IActionResult WeatherJson()
+        {
+            Models.Root WJson = new Models.Root();
+            
+            string JSONResponse = System.IO.File.ReadAllText(Path.Combine(hostingEnv.WebRootPath, "weather.json"));
+            WJson = JsonConvert.DeserializeObject<Models.Root>(JSONResponse);
+
+            return View(WJson);
+        }
+
         // GET: Poklons/Food
         public async Task<IActionResult> Food()
         {

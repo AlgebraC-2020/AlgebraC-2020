@@ -35,6 +35,7 @@ namespace BazaPoklona.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<OstvareniPrometViewModel>().HasNoKey();
+            modelBuilder.Entity<Models.Root>().HasNoKey();
 
             modelBuilder.HasAnnotation("Relational:Collation", "Croatian_CI_AS");
 

@@ -204,7 +204,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_01_vj", "..\..\..\..\Desk
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fakultet", "Fakultet\Fakultet.csproj", "{CF6F12D5-9103-46D3-AE2D-020443FC7A59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazaPoklona", "BazaPoklona\BazaPoklona.csproj", "{9ECCDAC6-A1E3-4709-8823-55F8C42F6ED6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BazaPoklona", "BazaPoklona\BazaPoklona.csproj", "{9ECCDAC6-A1E3-4709-8823-55F8C42F6ED6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCsAuth", "MVCsAuth\MVCsAuth.csproj", "{02EB523A-6EE2-494D-A8CF-A8AED33E652A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -469,6 +471,10 @@ Global
 		{9ECCDAC6-A1E3-4709-8823-55F8C42F6ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ECCDAC6-A1E3-4709-8823-55F8C42F6ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ECCDAC6-A1E3-4709-8823-55F8C42F6ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02EB523A-6EE2-494D-A8CF-A8AED33E652A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02EB523A-6EE2-494D-A8CF-A8AED33E652A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02EB523A-6EE2-494D-A8CF-A8AED33E652A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02EB523A-6EE2-494D-A8CF-A8AED33E652A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

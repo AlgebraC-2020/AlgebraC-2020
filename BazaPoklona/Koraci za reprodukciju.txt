@@ -1,4 +1,11 @@
-﻿ZA react ukoliko se pojavi greska :
+﻿
+$ curl http://localhost:5000/Poklons/IndexJson | json_pp
+
+http://localhost:5000/Poklons/ConsumeJson
+http://localhost:5000/Poklons/IndexJson
+
+
+ZA react ukoliko se pojavi greska :
 No input was found in config file tsconfig.json
 
 kreirati u solution home dir prazan file filedummy.ts !
