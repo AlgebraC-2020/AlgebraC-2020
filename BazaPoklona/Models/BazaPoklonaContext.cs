@@ -34,6 +34,17 @@ namespace BazaPoklona.Models
         // Data annotation ne radi, koristio je FLUENT API
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+
+            modelBuilder.Ignore<Models.Coord>();
+            modelBuilder.Ignore<Models.Root>();
+            modelBuilder.Ignore<Models.Clouds>();
+            modelBuilder.Ignore<Models.Weather>();
+            modelBuilder.Ignore<Models.Main>();
+            modelBuilder.Ignore<Models.Wind>();
+            modelBuilder.Ignore<Models.Sys>();
+
+
             modelBuilder.Entity<OstvareniPrometViewModel>().HasNoKey();
             modelBuilder.Entity<Models.Root>().HasNoKey();
 
