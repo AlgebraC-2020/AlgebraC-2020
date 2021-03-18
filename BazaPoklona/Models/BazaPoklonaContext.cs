@@ -34,30 +34,9 @@ namespace BazaPoklona.Models
         // Data annotation ne radi, koristio je FLUENT API
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
-
             modelBuilder.Entity<OstvareniPrometViewModel>().HasNoKey();
-
-
-            modelBuilder.Ignore<Models.Coord>();
-            modelBuilder.Ignore< Models.Root > ();
-            modelBuilder.Ignore< Models.Clouds > ();
-            modelBuilder.Ignore< Models.Weather > ();
-            modelBuilder.Ignore< Models.Main > ();
-            modelBuilder.Ignore< Models.Wind > ();
-            modelBuilder.Ignore< Models.Sys > ();
-             
-
-
-            /*
             modelBuilder.Entity<Models.Root>().HasNoKey();
-            modelBuilder.Entity<Models.Clouds>().HasNoKey();
-            modelBuilder.Entity<Models.Coord>().HasNoKey();
-            modelBuilder.Entity<Models.Weather>().HasNoKey();
-            modelBuilder.Entity<Models.Main>().HasNoKey();
-            modelBuilder.Entity<Models.Wind>().HasNoKey();
-            modelBuilder.Entity<Models.Sys>().HasNoKey();
-            */
+
             modelBuilder.HasAnnotation("Relational:Collation", "Croatian_CI_AS");
 
             modelBuilder.Entity<Poklon>(entity =>

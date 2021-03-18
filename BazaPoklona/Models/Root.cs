@@ -1,20 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace BazaPoklona.Models
 {
     // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
-    [NotMapped]
     public class Coord
     {
         public double lon { get; set; }
         public double lat { get; set; }
     }
 
-    [NotMapped]
     public class Weather
     {
         public int id { get; set; }
@@ -22,7 +19,7 @@ namespace BazaPoklona.Models
         public string description { get; set; }
         public string icon { get; set; }
     }
-    [NotMapped]
+
     public class Main
     {
         public double temp { get; set; }
@@ -32,18 +29,18 @@ namespace BazaPoklona.Models
         public int pressure { get; set; }
         public int humidity { get; set; }
     }
-    [NotMapped]
+
     public class Wind
     {
         public double speed { get; set; }
         public int deg { get; set; }
     }
-    [NotMapped]
+
     public class Clouds
     {
         public int all { get; set; }
     }
-    [NotMapped]
+
     public class Sys
     {
         public int type { get; set; }
@@ -53,7 +50,7 @@ namespace BazaPoklona.Models
         public int sunrise { get; set; }
         public int sunset { get; set; }
     }
-    [NotMapped]
+
     public class Root
     {
         public Coord coord { get; set; }
