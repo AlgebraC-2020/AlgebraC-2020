@@ -85,7 +85,8 @@ namespace BazaPoklona
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Poklons}/{action=Index}/{id?}");
+                //  pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
