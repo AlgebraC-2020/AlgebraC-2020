@@ -206,7 +206,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fakultet", "Fakultet\Fakult
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BazaPoklona", "BazaPoklona\BazaPoklona.csproj", "{9ECCDAC6-A1E3-4709-8823-55F8C42F6ED6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCsAuth", "MVCsAuth\MVCsAuth.csproj", "{02EB523A-6EE2-494D-A8CF-A8AED33E652A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCsAuth", "MVCsAuth\MVCsAuth.csproj", "{02EB523A-6EE2-494D-A8CF-A8AED33E652A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1FA0D0FA-D85F-4D2D-BD84-787CAB9BF84D}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
