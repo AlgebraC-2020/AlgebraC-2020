@@ -32,6 +32,9 @@ namespace OAuthGoogle
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddDatabaseDeveloperPageExceptionFilter();
+
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
@@ -42,7 +45,14 @@ namespace OAuthGoogle
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
+                app.UseMigrationsEndPoint();
+                /*Severity	Code	Description	Project	File	Line	Suppression State
+Warning	CS0618	'DatabaseErrorPageExtensions.UseDatabaseErrorPage(IApplicationBuilder)' is obsolete:
+                'This is obsolete and will be removed in a future version. 
+                Use DatabaseDeveloperPageExceptionFilter instead, see documentation at https://aka.ms/DatabaseDeveloperPageExceptionFilter.'	OAuthGoogle	C:\Users\Algebra\Source\Repos\AlgebraC-2020\AlgebraC-2020\OAuthGoogle\Startup.cs	45	Active
+*/
+                // app.UseDatabaseErrorPage();
+
             }
             else
             {
