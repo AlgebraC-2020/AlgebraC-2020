@@ -8,6 +8,7 @@
 - Ivan Mijatovic (WCF 10.03.2021)
 - Josip
 - Dominik
+- Filip Brkic (22.03.2021)
 
 #Polozili SQL (24.02.2021)
 - Dominik Hrdas
